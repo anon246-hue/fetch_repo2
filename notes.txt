@@ -1,0 +1,26 @@
+Use pyhton to download and extract tar/gz files
+    load to temp folder
+    move flat files to repo
+
+ingest flats into duck db
+    unpivot json where needed
+
+DBT model flat files into dims and facts
+    add metadata like ins ts and delete ts, and user
+    add PKs and FKs
+    try to make re-runnable/incremental
+        use full load flag??
+
+Jupyter NB for EDA
+    and queries/QA
+    with some viz?
+
+Furute
+use persisted DB vs in memory
+productionizing and adding orchestrator to use like airflow
+
+add/ask on loading multiple files from each zip?
+
+add tests like source file rows match db?
+
+more consistent source with tar and gz

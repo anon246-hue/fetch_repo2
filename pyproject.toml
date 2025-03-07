@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools","setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fetch"
+version = "0.0.1"
+dependencies = [
+  "duckdb",
+  "pandas",
+  "numpy",
+  "requests",
+  "toml",
+  "ipykernel",
+  "pydantic"
+]
+requires-python = ">=3.11"
+authors = [
+  {name = "Craig"},
+]
+description = "Utils for ingesting and modeling Fetch data"
+#readme = "README.rst"
+
+[project.optional-dependencies]
+all = ["click"]
+
+#[tool.setuptools]
+#packages = ["fetch"]
